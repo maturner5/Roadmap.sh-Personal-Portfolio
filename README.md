@@ -1,5 +1,7 @@
 # Roadmap.sh-Personal-Portfolio
 Simple personal portfolio project I made from the frontend roadmap.sh design.
+### Project URL
+https://maturner5.github.io/Roadmap.sh-Personal-Portfolio/main.html
 
 ## Screen Recordings
 ![screen-recording-first](https://github.com/user-attachments/assets/d34448b2-4ca6-41f1-9095-9b921952b617)
