@@ -1,5 +1,5 @@
 # Roadmap.sh-Personal-Portfolio
-Simple personal portfolio project I made from the frontend roadmap.sh design.
+Simple personal portfolio project I made from the frontend roadmap.sh design. It has no interactivity. My goal was to just try and copy the given design and to make the webpage responsive.
 ### Project URL
 ##### Click the link to try it out!
 https://maturner5.github.io/Roadmap.sh-Personal-Portfolio/main.html
