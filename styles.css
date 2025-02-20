@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Schoolbell&display=swap');
+
+:root {
+    --border-spacing: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-family: "Schoolbell";
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-family: "Schoolbell";
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid black 2px;
+    padding: 20px;
+
+    & .header__top-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .header__top-bar__pic-and-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+
+        & .header__top-bar__pic-and-name__pic-img {
+            width: 30px;
+            height: auto;
+            margin: 5px 0;
+        }
+
+        & .header__top-bar__pic-and-name__name-text {
+            margin: 5px 0;
+        }
+    }
+
+    & .header__top-bar__links__list {
+        display: flex;
+        list-style: none;
+        margin: 5px 0;
+        padding: 0;
+
+        & li{
+            padding: 0 10px;
+            border-right: solid black 1px;
+            transform: skewX(-20deg);
+
+            & p {
+                transform: skewX(20deg);
+                margin: 0;
+            }
+        }
+
+        & li:last-child {
+            border: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+
+    & .header__main-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & h1 {
+            margin-top: 10px;
+            margin-bottom: 0;
+            font-family: "Schoolbell";
+            font-weight: 600;
+            font-size: 2.3rem;
+        }
+
+        & p {
+            margin-top: 0;
+        }
+    }
+}
+
+.main-content__text {
+    padding: var(--border-spacing);
+}
+
+.main-content {
+    & h3 {
+        text-align: center;
+    }
+
+    & .main-content__projects {
+        width: 100%;
+        text-align: center;
+
+        & .main-content__projects__title {
+            margin: 0;
+            padding: 18.72px 0;
+        }
+
+        & .main-content__projects__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            & li a {
+                display: inline-block;
+                width: 100%;
+                border-bottom: solid black 1px;
+                padding: 8px 0;
+            }
+
+            & li a:hover {
+                background-color: #e9ecef;
+            }
+
+            & li a:active {
+                background-color: #737475;
+            }
+        }
+    }
+
+    & .main-content__work-experience {
+        & a {
+            color: blue;
+        }
+
+        & a:hover {
+            background-color: #e9ecef;
+        }
+
+        & h4 {
+            margin: 0;
+        }
+
+        & .main-content__work-experience__opensource-work {
+            border-left: none;
+        }
+
+        & .main-content__work-experience__roadmap-sh {
+            border-bottom: solid black 1px;
+            border-left: none;
+        }
+    }
+
+    & .main-content__education {
+
+        & .main-content__education__text {
+            margin: 0;
+            padding-top: 5px;
+        }
+    }
+
+    & .main-content__teacher-reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        & .main-content__teacher-reviews__blurb-layout {
+            border: solid black 1px;
+            border-radius: 30px;
+            margin: var(--border-spacing);
+            max-width: 430px;
+
+            & .main-content__teacher-reviews__blurb-layout__inside-blurb {
+                padding: 15px;
+
+                & p {
+                    margin: 0;
+                }
+
+                & .main-content__teacher-reviews__blurb-layout__name-and-title {
+                    margin-top: 15px;
+                    color: #8f8d8d;
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    h3 {
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+/* ------------------------------- */
+/* MEDIA */
+/* ------------------------------- */
+/* if screen width is over 600px, aka computers */
+@media screen and (min-width: 600px) {
+    .header {
+        padding-bottom: 40px;
+
+        & .header__top-bar {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        & .header__top-bar__pic-and-name {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 150px;
+            margin: 0px 0;
+
+            & .header__top-bar__pic-and-name__pic-img {
+                margin: 0;
+            }
+
+            .header__top-bar__pic-and-name__name-text {
+                margin-left: 5px;
+            }
+        }
+
+        & .header__top-bar__links__list a:hover {
+            background-color: #e9ecef;
+        }
+
+        & .header__main-title {
+            margin: 35px 0;
+
+            & p {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .main-content__work-experience {
+        border-left: solid black 1px;
+
+        & .main-content__work-experience__roadmap-sh {
+            padding-top: 8px;
+        }
+    }
+
+    .main-content__education {
+        border-left: solid black 1px;
+    }
+
+    .main-content__except-teacher-reviews {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        border-bottom: solid black 1px;
+    }
+
+    .main-content__teacher-reviews__all-blurbs {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    .footer {
+        margin-bottom: 50px;
+    }
+}
+
+/* if screen width is less than 600px, aka phone screens */
+@media screen and (max-width: 600px) {
+    .main-content__projects__title {
+        border-bottom: solid black 1px;
+    }
+
+    .main-content__projects__list {
+        & li a {
+            background-color: #e9ecef;
+        }
+    }
+    .main-content__work-experience {
+        & div {
+            background-color: #e9ecef;
+        }
+    }
+    .main-content__teacher-reviews__blurb-2 {
+        display: none;
+    }
+
+    .main-content__teacher-reviews__blurb-3 {
+        display: none;
+    }
+
+    .main-content__work-experience__opensource-work {
+        border-bottom: solid black 1px;
+    }
+
+    .main-content__work-experience__roadmap-sh {
+        border-top: solid black 1px;
+    }
+
+    .main-content__education {
+        border-bottom: solid black 1px;
+    }
+}
